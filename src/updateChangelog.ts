@@ -1,4 +1,4 @@
-import unified, { Transformer } from "unified";
+import { unified, Transformer } from "unified";
 import markdown from "remark-parse";
 import stringify from "remark-stringify";
 import { VFile } from "vfile";
@@ -80,7 +80,7 @@ function releaseTransformation({
   owner,
   repo
 }: Options) {
-  return transformer as Transformer;
+  return transformer;
 
   function transformer(tree: MarkdownRootNode, _file: VFile) {
     const previousVersion = determinePreviousVersion(tree);
