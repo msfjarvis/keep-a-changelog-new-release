@@ -9,24 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
--   Our main theme is now blue instead of red.
+*   Our main theme is now blue instead of red.
 
 ## [0.2.0] - 2019-09-13
 
 ### Added
 
--   First feature that is gonna make us money.
--   Quite a few bugs, sorry in advance!
+*   First feature that is gonna make us money.
+*   Quite a few bugs, sorry in advance!
 
 ### Changed
 
--   Reworked the login system. You have to provide a password now!
+*   Reworked the login system. You have to provide a password now!
 
 ## [0.1.0] - 2019-09-05
 
 ### Added
 
--   Initial release :tada:
+*   Initial release :tada:
 
 [Unreleased]: https://github.com/foo/bar/compare/v0.2.0...HEAD
 

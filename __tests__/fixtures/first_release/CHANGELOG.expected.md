@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
--   Everything since the beginning!
+*   Everything since the beginning!
 
 [Unreleased]: https://github.com/thomaseizinger/github-action-gitflow-release-workflow/compare/0.1.0...HEAD
 
