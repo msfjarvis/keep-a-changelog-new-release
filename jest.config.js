@@ -5,7 +5,9 @@ module.exports = {
   testMatch: ['**/*.test.ts'],
   testRunner: 'jest-circus/runner',
   transform: {
-    '^.+\\.ts$': 'ts-jest'
+    '^.+\\.ts$': 'ts-jest',
+    '^.+\\.js$': 'ts-jest'
   },
+  transformIgnorePatterns: ["node_modules/(?!unified)/"],
   verbose: true
 }
