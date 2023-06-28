@@ -5,12 +5,5 @@
     "helpers:pinGitHubActionDigests",
     "github>msfjarvis/shared-workflows//renovate/automerge"
   ],
-  "branchConcurrentLimit": 15,
-  "packageRules": [
-    {
-      "description": "Automerge non-major updates",
-      "matchUpdateTypes": ["minor", "patch", "digest", "lockFileMaintenance"],
-      "automerge": true
-    },
-  ]
+  "branchConcurrentLimit": 15
 }
