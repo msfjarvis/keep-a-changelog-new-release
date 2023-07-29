@@ -42,7 +42,7 @@
     "js-yaml": "^4.1.0",
     "mock-env": "^0.2.0",
     "prettier": "^3.0.0",
-    "to-vfile": "^7.2.4",
+    "to-vfile": "^8.0.0",
     "ts-jest": "^29.1.0",
     "ts-loader": "^9.4.3",
     "typescript": "^5.1.3",
