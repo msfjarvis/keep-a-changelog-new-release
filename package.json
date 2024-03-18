@@ -22,8 +22,8 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/exec": "^1.1.1",
-    "remark-parse": "^10.0.2",
-    "remark-stringify": "^10.0.3",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
     "stream-buffers": "^3.0.2",
     "unified": "^10.1.2"
   },
