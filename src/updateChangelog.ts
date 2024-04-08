@@ -277,6 +277,11 @@ export default async function updateChangelog(
       owner,
       repo,
     })
+    .data("settings", {
+      listItemIndent: "1",
+      tightDefinitions: true,
+      bullet: "-"
+    })
     .use(stringify)
     .process(file);
 }
