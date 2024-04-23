@@ -1,9 +1,16 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+
+    systems.url = "github:msfjarvis/flake-systems";
+
+    flake-utils = {
+      url = "github:numtide/flake-utils";
+      inputs.systems.follows = "systems";
+    };
+
     flake-compat = {
-      url = "github:edolstra/flake-compat";
+      url = "github:nix-community/flake-compat";
       flake = false;
     };
   };
@@ -18,6 +25,6 @@
       pkgs = import nixpkgs {inherit system;};
     in {
       devShells.default =
-        pkgs.mkShell {nativeBuildInputs = with pkgs; [nodejs-16_x yarn];};
+        pkgs.mkShell {nativeBuildInputs = with pkgs; [nodejs yarn];};
     });
 }
