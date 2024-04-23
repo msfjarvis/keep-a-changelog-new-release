@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This commit hook checks whether we ran `yarn build` when committed TypeScript files.
 # For GitHub actions to work, we need to check the compiled JavaScript into VCS.
@@ -9,7 +9,7 @@
 TS_FILES=$(git diff --staged --name-only | grep '\.ts' | grep -cv '__tests__')
 DIST_MODIFIED=$(git diff --staged --name-only | grep -c dist/index.js)
 
-if [ $TS_FILES -gt 0 ] && [ $DIST_MODIFIED -eq 0 ] ; then
+if [ "$TS_FILES" -gt 0 ] && [ "$DIST_MODIFIED" -eq 0 ] ; then
     echo "You modified TypeScript files but apparently did not run 'yarn build'".
     exit 1;
 fi
