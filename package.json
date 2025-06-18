@@ -28,7 +28,7 @@
     "unified": "^10.1.2"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.2",
+    "@types/jest": "^30.0.0",
     "@types/node": "^22.0.0",
     "@types/stream-buffers": "^3.0.4",
     "@types/unist": "^3.0.0",
