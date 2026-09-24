@@ -1,7 +1,7 @@
 {
   description = "devshell for a NodeJS project";
 
-  inputs.nixpkgs.url = "github:msfjarvis/nixpkgs/nixpkgs-unstable";
+  inputs.nixpkgs.url = "https://nix-channels.msfjarvis.dev/nixpkgs/latest.tar.zst";
 
   inputs.systems.url = "github:msfjarvis/flake-systems";
 
@@ -43,7 +43,7 @@
           ];
 
           packages = with pkgs; [
-            nodejs
+            nodejs_24
             yarn
           ];
         };
