@@ -1,4 +1,4 @@
-import { unified, Transformer } from "unified";
+import { unified } from "unified";
 import markdown from "remark-parse";
 import stringify from "remark-stringify";
 import { VFile } from "vfile";
@@ -24,7 +24,7 @@ function releaseTransformation({
 }: Options) {
   return transformer;
 
-  function transformer(tree: MarkdownRootNode, _file: VFile) {
+  function transformer(tree: MarkdownRootNode) {
     const previousVersion = determinePreviousVersion(tree);
     convertUnreleasedSectionToNewRelease(tree, version, releaseDate);
     addEmptyUnreleasedSection(tree);
@@ -220,7 +220,7 @@ export default async function updateChangelog(
       repo,
     })
     .data("settings", {
-      listItemIndent: "1",
+      listItemIndent: "one",
       tightDefinitions: true,
       bullet: "-"
     })

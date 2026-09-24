@@ -1,5 +1,4 @@
-import { setFailed } from "@actions/core";
-import { setOutput } from "@actions/core/lib/core";
+import { setFailed, setOutput } from "@actions/core";
 import { read, write } from "to-vfile";
 import updateChangelog from "./updateChangelog";
 import getInputs from "./getInputs";
@@ -26,8 +25,8 @@ async function run(): Promise<void> {
 
     const releaseNotes = getReleaseNotes(newChangelog, version);
     setOutput("release-notes", releaseNotes);
-  } catch (error: any) {
-    setFailed(error.message);
+  } catch (error) {
+    setFailed(error instanceof Error ? error.message : String(error));
   }
 }
 

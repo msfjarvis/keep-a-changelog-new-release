@@ -1,5 +1,5 @@
 import formatDate from "./formatDate";
-import { getInput, warning } from "@actions/core/lib/core";
+import { getInput, warning } from "@actions/core";
 
 interface Inputs {
   tag: string;

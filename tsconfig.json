@@ -2,14 +2,12 @@
   "compilerOptions": {
     "allowJs": true,
     "target": "es6",
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "strict": true,
     "noEmit": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
-    "typeRoots": [
-      "node_modules/@types",
-      "./types"
-    ]
+    "types": ["node", "jest"]
   }
 }
