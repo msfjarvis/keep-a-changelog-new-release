@@ -21,5 +21,5 @@ outputs:
   release-notes:
     description: 'The release notes of the newly released version'
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'dist/index.js'
