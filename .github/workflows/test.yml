@@ -12,13 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
 
-      - name: Set Node.js 20.x
+      - name: Set Node.js 24.x
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
           node-version: 24.21.0
 
       - name: Install dependencies
-        run: yarn install
+        run: npm ci
       - name: Build
         run: |
-          yarn run build
+          npm run build
