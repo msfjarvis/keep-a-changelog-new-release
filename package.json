@@ -46,7 +46,7 @@
     "to-vfile": "^8.0.0",
     "ts-jest": "^29.4.13",
     "ts-loader": "^9.6.2",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.0",
     "webpack": "^5.111.1",
     "webpack-cli": "^7.2.3",
     "yarn-upgrade-all": "^0.8.1"
